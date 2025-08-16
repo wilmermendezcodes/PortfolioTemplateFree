@@ -1,0 +1,43 @@
+[04:37:57.670] Running build in Washington, D.C., USA (East) – iad1
+[04:37:57.671] Build machine configuration: 2 cores, 8 GB
+[04:37:57.729] Cloning github.com/wilmermendezcodes/CozyRecommender (Branch: develop, Commit: e7b228a)
+[04:37:57.853] Previous build caches not available
+[04:37:58.514] Cloning completed: 785.000ms
+[04:37:58.545] Found .vercelignore
+[04:37:58.564] Removed 94 ignored files defined in .vercelignore
+[04:37:58.565]   /.replit
+[04:37:58.565]   /attached_assets/generated_images/Big_Fish_movie_poster_51f81617.png
+[04:37:58.565]   /attached_assets/generated_images/Coco_movie_poster_85856d88.png
+[04:37:58.565]   /attached_assets/generated_images/Forrest_Gump_movie_poster_4e9913fe.png
+[04:37:58.565]   /attached_assets/generated_images/Greatest_Showman_movie_poster_9294b49e.png
+[04:37:58.565]   /attached_assets/generated_images/Julie_Julia_movie_poster_f41d64ac.png
+[04:37:58.565]   /attached_assets/generated_images/Secret_Garden_movie_poster_f7124554.png
+[04:37:58.565]   /attached_assets/generated_images/Wonder_Woman_movie_poster_85d7241e.png
+[04:37:58.565]   /attached_assets/Pasted--04-28-16-925-Running-build-in-Washington-D-C-USA-East-iad1-04-28-16-926-Build-machine-co-1754684975407_1754684975407.txt
+[04:37:58.565]   /attached_assets/Pasted--04-31-13-652-Running-build-in-Washington-D-C-USA-East-iad1-04-31-13-653-Build-machine-co-1754685111915_1754685111916.txt
+[04:38:00.922] Running "vercel build"
+[04:38:02.158] Vercel CLI 44.7.3
+[04:38:02.893] Installing dependencies...
+[04:38:08.017] npm warn deprecated @esbuild-kit/esm-loader@2.6.5: Merged into tsx: https://tsx.is
+[04:38:08.094] npm warn deprecated @esbuild-kit/core-utils@3.3.2: Merged into tsx: https://tsx.is
+[04:38:14.969] 
+[04:38:14.970] added 603 packages in 12s
+[04:38:14.970] 
+[04:38:14.970] 73 packages are looking for funding
+[04:38:14.970]   run `npm fund` for details
+[04:38:15.135] 
+[04:38:15.135] > rest-express@1.0.0 build
+[04:38:15.135] > npx vite build && npx esbuild server/index.ts --platform=node --packages=external --bundle --format=esm --outdir=dist
+[04:38:15.135] 
+[04:38:15.838] [36mvite v5.4.19 [32mbuilding for production...[36m[39m
+[04:38:15.893] transforming...
+[04:38:15.903] [32m✓[39m 2 modules transformed.
+[04:38:15.905] [31mx[39m Build failed in 45ms
+[04:38:15.905] [31merror during build:
+[04:38:15.906] [31mCould not resolve "./src/main.tsx" from "client/index.html"[31m
+[04:38:15.906] file: [36m/vercel/path0/client/index.html[31m
+[04:38:15.906]     at getRollupError (file:///vercel/path0/node_modules/rollup/dist/es/shared/parseAst.js:396:41)
+[04:38:15.906]     at error (file:///vercel/path0/node_modules/rollup/dist/es/shared/parseAst.js:392:42)
+[04:38:15.906]     at ModuleLoader.handleInvalidResolvedId (file:///vercel/path0/node_modules/rollup/dist/es/shared/node-entry.js:20065:24)
+[04:38:15.906]     at file:///vercel/path0/node_modules/rollup/dist/es/shared/node-entry.js:20025:26[39m
+[04:38:15.927] Error: Command "npm run build" exited with 1

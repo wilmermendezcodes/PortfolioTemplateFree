@@ -1,0 +1,82 @@
+[04:55:39.991] Running build in Washington, D.C., USA (East) – iad1
+[04:55:39.992] Build machine configuration: 2 cores, 8 GB
+[04:55:40.025] Cloning github.com/wilmermendezcodes/CozyRecommender (Branch: develop, Commit: f8fa5b5)
+[04:55:40.712] Previous build caches not available
+[04:55:42.202] Cloning completed: 2.177s
+[04:55:42.251] Found .vercelignore
+[04:55:42.278] Removed 98 ignored files defined in .vercelignore
+[04:55:42.279]   /.replit
+[04:55:42.279]   /attached_assets/generated_images/Big_Fish_movie_poster_51f81617.png
+[04:55:42.279]   /attached_assets/generated_images/Coco_movie_poster_85856d88.png
+[04:55:42.279]   /attached_assets/generated_images/Forrest_Gump_movie_poster_4e9913fe.png
+[04:55:42.279]   /attached_assets/generated_images/Greatest_Showman_movie_poster_9294b49e.png
+[04:55:42.279]   /attached_assets/generated_images/Julie_Julia_movie_poster_f41d64ac.png
+[04:55:42.279]   /attached_assets/generated_images/Secret_Garden_movie_poster_f7124554.png
+[04:55:42.279]   /attached_assets/generated_images/Wonder_Woman_movie_poster_85d7241e.png
+[04:55:42.279]   /attached_assets/Pasted--04-28-16-925-Running-build-in-Washington-D-C-USA-East-iad1-04-28-16-926-Build-machine-co-1754684975407_1754684975407.txt
+[04:55:42.279]   /attached_assets/Pasted--04-31-13-652-Running-build-in-Washington-D-C-USA-East-iad1-04-31-13-653-Build-machine-co-1754685111915_1754685111916.txt
+[04:55:44.671] Running "vercel build"
+[04:55:45.140] Vercel CLI 44.7.3
+[04:55:45.933] Installing dependencies...
+[04:55:51.471] npm warn deprecated @esbuild-kit/esm-loader@2.6.5: Merged into tsx: https://tsx.is
+[04:55:51.568] npm warn deprecated @esbuild-kit/core-utils@3.3.2: Merged into tsx: https://tsx.is
+[04:55:58.955] 
+[04:55:58.956] added 603 packages in 13s
+[04:55:58.957] 
+[04:55:58.957] 73 packages are looking for funding
+[04:55:58.957]   run `npm fund` for details
+[04:55:59.528] 🚀 Starting custom build for Vercel...
+[04:55:59.529] 🔍 Debugging build environment...
+[04:55:59.529] 📁 Working directory: /vercel/path0
+[04:55:59.529] 📂 Root directory:
+[04:55:59.530]   📄 .env.example
+[04:55:59.530]   📁 .git
+[04:55:59.530]   📄 .gitignore
+[04:55:59.530]   📁 .vercel
+[04:55:59.530]   📄 .vercelignore
+[04:55:59.531]   📄 DEPLOYMENT.md
+[04:55:59.531]   📄 IMMEDIATE-FIX.md
+[04:55:59.531]   📄 LOCAL-SETUP.md
+[04:55:59.531]   📄 LOCALHOST-FIX.md
+[04:55:59.532]   📄 QUICK-FIX.md
+[04:55:59.532]   ... and 31 more items
+[04:55:59.532] 📂 Client directory:
+[04:55:59.532]   📄 index.html
+[04:55:59.532]   📁 public
+[04:55:59.532]   📁 src
+[04:55:59.533] 📂 Client/src directory:
+[04:55:59.533]   📁 components
+[04:55:59.533]   📁 hooks
+[04:55:59.533]   📁 lib
+[04:55:59.533]   📁 pages
+[04:55:59.533]   📁 store
+[04:55:59.534] 📦 Installing dependencies...
+[04:56:01.166] 
+[04:56:01.167] up to date, audited 507 packages in 2s
+[04:56:01.167] 
+[04:56:01.168] 65 packages are looking for funding
+[04:56:01.168]   run `npm fund` for details
+[04:56:01.185] 
+[04:56:01.185] 8 vulnerabilities (3 low, 3 moderate, 2 high)
+[04:56:01.185] 
+[04:56:01.186] To address issues that do not require attention, run:
+[04:56:01.186]   npm audit fix
+[04:56:01.186] 
+[04:56:01.186] To address all issues (including breaking changes), run:
+[04:56:01.187]   npm audit fix --force
+[04:56:01.187] 
+[04:56:01.187] Run `npm audit` for details.
+[04:56:01.198] 🔨 Building React application...
+[04:56:01.200] 📁 Main file path: /vercel/path0/client/src/main.tsx
+[04:56:01.200] 📁 Main file exists: false
+[04:56:01.201] ❌ Build failed: Error: Main TypeScript file not found at /vercel/path0/client/src/main.tsx
+[04:56:01.201]     at file:///vercel/path0/build-custom.js:85:11
+[04:56:01.201]     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+[04:56:01.201]     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:647:26)
+[04:56:01.202]     at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:117:5)
+[04:56:01.202] Stack: Error: Main TypeScript file not found at /vercel/path0/client/src/main.tsx
+[04:56:01.202]     at file:///vercel/path0/build-custom.js:85:11
+[04:56:01.202]     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+[04:56:01.202]     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:647:26)
+[04:56:01.203]     at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:117:5)
+[04:56:01.206] Error: Command "node build-custom.js" exited with 1

@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 223 35% 7%;
+    --foreground: 220 14% 96%;
+
+    --card: 223 35% 8%;
+    --card-foreground: 220 14% 96%;
+
+    --popover: 223 35% 8%;
+    --popover-foreground: 220 14% 96%;
+
+    --primary: 224 88% 68%;
+    --primary-foreground: 222 100% 99%;
+
+    --secondary: 257 88% 66%;
+    --secondary-foreground: 222 100% 99%;
+
+    --muted: 222 16% 24%;
+    --muted-foreground: 217 14% 71%;
+
+    --accent: 224 94% 75%;
+    --accent-foreground: 222 100% 99%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 218 18% 21%;
+    --input: 218 18% 21%;
+    --ring: 224 94% 75%;
+
+    --radius: 0.75rem;
+  }
+
+  .light {
+    --background: 210 40% 98%;
+    --foreground: 224 71% 4%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 224 71% 4%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 224 71% 4%;
+
+    --primary: 221 83% 53%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 259 94% 61%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 210 40% 96%;
+    --muted-foreground: 215 16% 47%;
+
+    --accent: 221 83% 53%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 221 83% 53%;
+  }
+
+  * { @apply border-border; }
+  body { @apply bg-background text-foreground; }
+}
+
+/* Glossy background accents */
+.bg-orb-a { background: radial-gradient(circle, rgba(122,162,255,0.55), transparent 70%); filter: blur(40px); }
+.bg-orb-b { background: radial-gradient(circle, rgba(154,122,255,0.5), transparent 70%); filter: blur(40px); }
+.glass {
+  @apply bg-white/5 dark:bg-white/5 backdrop-blur-md border rounded-2xl shadow-[0_10px_30px_rgba(0,0,0,0.25)];
+}

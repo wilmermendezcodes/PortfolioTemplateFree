@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(0 0% 100%);
+  --foreground: hsl(210 10% 23%);
+  --card: hsl(250 10% 98%);
+  --card-foreground: hsl(210 10% 23%);
+  --popover: hsl(0 0% 100%);
+  --popover-foreground: hsl(210 10% 23%);
+  --primary: hsl(282 89% 85%);
+  --primary-foreground: hsl(0 0% 100%);
+  --secondary: hsl(200 89% 85%);
+  --secondary-foreground: hsl(210 10% 23%);
+  --muted: hsl(240 5% 96%);
+  --muted-foreground: hsl(240 4% 46%);
+  --accent: hsl(48 89% 85%);
+  --accent-foreground: hsl(210 10% 23%);
+  --success: hsl(160 89% 85%);
+  --success-foreground: hsl(210 10% 23%);
+  --surface: hsl(250 100% 99%);
+  --destructive: hsl(0 84% 60%);
+  --destructive-foreground: hsl(0 0% 98%);
+  --border: hsl(214 32% 91%);
+  --input: hsl(214 32% 91%);
+  --ring: hsl(282 89% 85%);
+  --sidebar: hsl(250 10% 98%);
+  --sidebar-foreground: hsl(210 10% 23%);
+  --sidebar-primary: hsl(282 89% 85%);
+  --sidebar-primary-foreground: hsl(0 0% 100%);
+  --sidebar-accent: hsl(240 5% 96%);
+  --sidebar-accent-foreground: hsl(282 89% 85%);
+  --sidebar-border: hsl(214 32% 91%);
+  --sidebar-ring: hsl(282 89% 85%);
+  --font-sans: 'Inter', sans-serif;
+  --font-serif: Georgia, serif;
+  --font-mono: Menlo, monospace;
+  --radius: 1rem;
+}
+
+.dark {
+  --background: hsl(224 71% 4%);
+  --foreground: hsl(213 31% 91%);
+  --card: hsl(224 71% 4%);
+  --card-foreground: hsl(213 31% 91%);
+  --popover: hsl(224 71% 4%);
+  --popover-foreground: hsl(213 31% 91%);
+  --primary: hsl(282 89% 85%);
+  --primary-foreground: hsl(210 40% 2%);
+  --secondary: hsl(200 89% 85%);
+  --secondary-foreground: hsl(210 40% 2%);
+  --muted: hsl(223 47% 11%);
+  --muted-foreground: hsl(215 14% 71%);
+  --accent: hsl(48 89% 85%);
+  --accent-foreground: hsl(210 40% 2%);
+  --success: hsl(160 89% 85%);
+  --success-foreground: hsl(210 40% 2%);
+  --surface: hsl(224 71% 4%);
+  --destructive: hsl(0 63% 31%);
+  --destructive-foreground: hsl(210 40% 98%);
+  --border: hsl(216 34% 17%);
+  --input: hsl(216 34% 17%);
+  --ring: hsl(282 89% 85%);
+  --sidebar: hsl(224 71% 4%);
+  --sidebar-foreground: hsl(213 31% 91%);
+  --sidebar-primary: hsl(282 89% 85%);
+  --sidebar-primary-foreground: hsl(210 40% 2%);
+  --sidebar-accent: hsl(223 47% 11%);
+  --sidebar-accent-foreground: hsl(282 89% 85%);
+  --sidebar-border: hsl(216 34% 17%);
+  --sidebar-ring: hsl(282 89% 85%);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-gray-50 text-foreground;
+    font-family: var(--font-sans);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold;
+  }
+}
+
+@layer utilities {
+  .line-clamp-2 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
+}
+
+/* Custom gradient backgrounds */
+.bg-cozy-gradient {
+  background: linear-gradient(135deg, hsl(282 89% 85% / 0.1) 0%, hsl(200 89% 85% / 0.1) 50%, hsl(160 89% 85% / 0.1) 100%);
+}
+
+.bg-subscription-gradient {
+  background: linear-gradient(135deg, hsl(160 89% 85% / 0.1) 0%, hsl(0 0% 100%) 50%, hsl(282 89% 85% / 0.1) 100%);
+}
+
+/* Custom hover effects */
+.hover-lift {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hover-lift:hover {
+  transform: translateY(-4px);
+}
+
+/* Mobile responsive utilities */
+@media (max-width: 640px) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  /* Better spacing on mobile */
+  .space-y-8 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
+  }
+}
+
+/* Improve touch targets on mobile */
+@media (max-width: 768px) {
+  button, 
+  [role="button"], 
+  input, 
+  textarea, 
+  select {
+    min-height: 44px;
+  }
+  
+  /* Ensure navigation is accessible on mobile */
+  .md\\:hidden {
+    display: block !important;
+  }
+  
+  /* Fix radio button layout on mobile - prevent oblong shapes */
+  [role="radio"] {
+    min-width: 20px !important;
+    min-height: 20px !important;
+    max-width: 20px !important;
+    max-height: 20px !important;
+    flex-shrink: 0 !important;
+  }
+}
+
+/* Better scrolling on mobile */
+body {
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Hide scrollbars but keep functionality */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}

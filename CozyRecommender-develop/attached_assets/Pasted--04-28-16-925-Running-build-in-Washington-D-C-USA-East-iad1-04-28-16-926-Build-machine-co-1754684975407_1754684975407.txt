@@ -1,0 +1,49 @@
+[04:28:16.925] Running build in Washington, D.C., USA (East) – iad1
+[04:28:16.926] Build machine configuration: 2 cores, 8 GB
+[04:28:16.974] Cloning github.com/wilmermendezcodes/CozyRecommender (Branch: develop, Commit: 74dfc7d)
+[04:28:17.201] Previous build caches not available
+[04:28:18.088] Cloning completed: 1.114s
+[04:28:18.122] Found .vercelignore
+[04:28:18.140] Removed 90 ignored files defined in .vercelignore
+[04:28:18.140]   /.replit
+[04:28:18.140]   /attached_assets/generated_images/Big_Fish_movie_poster_51f81617.png
+[04:28:18.140]   /attached_assets/generated_images/Coco_movie_poster_85856d88.png
+[04:28:18.140]   /attached_assets/generated_images/Forrest_Gump_movie_poster_4e9913fe.png
+[04:28:18.140]   /attached_assets/generated_images/Greatest_Showman_movie_poster_9294b49e.png
+[04:28:18.140]   /attached_assets/generated_images/Julie_Julia_movie_poster_f41d64ac.png
+[04:28:18.140]   /attached_assets/generated_images/Secret_Garden_movie_poster_f7124554.png
+[04:28:18.141]   /attached_assets/generated_images/Wonder_Woman_movie_poster_85d7241e.png
+[04:28:18.141]   /client/src/App.tsx
+[04:28:18.141]   /client/src/components/AnimatedBackground.tsx
+[04:28:21.147] Running "vercel build"
+[04:28:21.597] Vercel CLI 44.7.3
+[04:28:22.819] Installing dependencies...
+[04:28:28.942] npm warn deprecated @esbuild-kit/esm-loader@2.6.5: Merged into tsx: https://tsx.is
+[04:28:29.079] npm warn deprecated @esbuild-kit/core-utils@3.3.2: Merged into tsx: https://tsx.is
+[04:28:36.066] 
+[04:28:36.067] added 603 packages in 13s
+[04:28:36.067] 
+[04:28:36.067] 73 packages are looking for funding
+[04:28:36.068]   run `npm fund` for details
+[04:28:36.322] 
+[04:28:36.322] > rest-express@1.0.0 build
+[04:28:36.322] > npx vite build && npx esbuild server/index.ts --platform=node --packages=external --bundle --format=esm --outdir=dist
+[04:28:36.322] 
+[04:28:36.880] [36mvite v5.4.19 [32mbuilding for production...[36m[39m
+[04:28:36.941] transforming...
+[04:28:36.951] [32m✓[39m 2 modules transformed.
+[04:28:36.959] [31mx[39m Build failed in 53ms
+[04:28:36.959] [31merror during build:
+[04:28:36.959] [31m[vite]: Rollup failed to resolve import "/src/main.tsx" from "/vercel/path0/client/index.html".
+[04:28:36.960] This is most likely unintended because it can break your application at runtime.
+[04:28:36.960] If you do want to externalize this module explicitly add it to
+[04:28:36.960] `build.rollupOptions.external`[31m
+[04:28:36.960]     at viteWarn (file:///vercel/path0/node_modules/vite/dist/node/chunks/dep-C6uTJdX2.js:65839:17)
+[04:28:36.960]     at onwarn (file:///vercel/path0/node_modules/@vitejs/plugin-react/dist/index.mjs:280:9)
+[04:28:36.960]     at onRollupWarning (file:///vercel/path0/node_modules/vite/dist/node/chunks/dep-C6uTJdX2.js:65869:5)
+[04:28:36.961]     at onwarn (file:///vercel/path0/node_modules/vite/dist/node/chunks/dep-C6uTJdX2.js:65534:7)
+[04:28:36.961]     at file:///vercel/path0/node_modules/rollup/dist/es/shared/node-entry.js:19452:13
+[04:28:36.961]     at Object.logger [as onLog] (file:///vercel/path0/node_modules/rollup/dist/es/shared/node-entry.js:21178:9)
+[04:28:36.961]     at ModuleLoader.handleInvalidResolvedId (file:///vercel/path0/node_modules/rollup/dist/es/shared/node-entry.js:20067:26)
+[04:28:36.961]     at file:///vercel/path0/node_modules/rollup/dist/es/shared/node-entry.js:20025:26[39m
+[04:28:36.982] Error: Command "npm run build" exited with 1
