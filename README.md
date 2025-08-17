@@ -1,3 +1,5 @@
+<img width="1880" height="913" alt="image" src="https://github.com/user-attachments/assets/27dd031b-3c12-455e-a997-33820c1c4640" />
+
 React Portfolio (Vite + React + TS)
 
 Modern, glossy portfolio template built with Vite, React 18, TypeScript, and Tailwind. It ships with shadcn-style UI primitives, a light/dark theme toggle, and clean sectioned layout you can customize in minutes.
