@@ -7,6 +7,24 @@
     <title>Portfolio</title>
     <meta name="description" content="Professional Portfolio" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <script>
+      // Set initial theme class before React mounts to avoid flashes
+      (function () {
+        try {
+          var stored = localStorage.getItem('theme');
+          var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+          var theme = stored === 'light' || stored === 'dark' ? stored : (prefersDark ? 'dark' : 'light');
+          var root = document.documentElement;
+          if (theme === 'dark') {
+            root.classList.add('dark');
+            root.classList.remove('light');
+          } else {
+            root.classList.add('light');
+            root.classList.remove('dark');
+          }
+        } catch (_) {}
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>
