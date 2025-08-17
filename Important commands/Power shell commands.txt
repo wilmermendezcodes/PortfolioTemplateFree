@@ -1,3 +1,0 @@
-Power shell commands:
-
-make new file: New-Item -Path ".env" -ItemType File
