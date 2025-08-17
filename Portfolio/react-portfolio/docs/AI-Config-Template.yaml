@@ -1,0 +1,21 @@
+# Example AI configuration (copy -> ai.config.yaml and adjust)
+
+models:
+  embedder: bge-base-en-v1.5
+  reranker: cross-encoder/ms-marco-MiniLM-L-6-v2
+  generator: gpt-4o-mini
+
+retrieval:
+  chunk_tokens: 512
+  chunk_overlap: 64
+  top_k: 10
+
+safety:
+  enable_input_moderation: true
+  enable_pii_redaction: true
+  refusal_on_disallowed: true
+
+telemetry:
+  enabled: false
+  sampling: 0.05
+
