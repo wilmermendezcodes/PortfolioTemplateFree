@@ -96,5 +96,5 @@ Security & Policies
 
 License
 
-- Add a license file if you plan to distribute. Currently unlicensed (all rights reserved by default).
+- Currently unlicensed (all rights reserved by default).
 
